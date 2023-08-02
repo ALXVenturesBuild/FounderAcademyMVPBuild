@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Coming Soon</title>
+</head>
+<body>
+    <div class="toggle" onclick="toggleMenu();"></div>
+
+    <section class="work" id="work">
+        <div class="title">
+            <h2>Coming Soon</h2>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyright &copy; 2023 Polaris Homes. All rights reserved</p>
+    </div>
+
+    <div class="sidebar">
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#services" onclick="toggleMenu();">Selections</a></li>
+            <li><a href="#work" onclick="toggleMenu();">FAQ's</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <script>
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.toggle');
+            const sidebar = document.querySelector('.sidebar');
+            menuToggle.classList.toggle('active');
+            sidebar.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
